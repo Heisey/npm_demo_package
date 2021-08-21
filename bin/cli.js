@@ -30,4 +30,6 @@ try {
   process.exit(1)
 }
 
-projectInstall()
+projectInstall({
+  repo
+})

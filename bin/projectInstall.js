@@ -1,8 +1,8 @@
 
-const projectInstall = async () => {
+const projectInstall = async (config) => {
   try {
     console.log('Downloading files')
-    repo
+    config.repo
 
 
 
