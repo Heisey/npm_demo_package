@@ -1,8 +1,9 @@
+const chalk = require('chalk')
 
 const projectInstall = async (config) => {
   try {
-    console.log('Downloading files')
-    config.repo
+    console.log(chalk.blue('Downloading files'))
+    console.log(chalk.blue(config.repo))
 
 
 
