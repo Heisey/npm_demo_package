@@ -2,7 +2,6 @@
 
 const chalk = require('chalk')
 
-const { execSync} = require('child_process')
 const path = require('path')
 const fs = require('fs')
 
@@ -18,9 +17,7 @@ if (process.argv.length < 3) {
 const projectName = process.argv[2]
 const currentPath = process.cwd()
 const projectPath = path.join(currentPath, projectName)
-const repo = 'github repo url'
-
-
+const repo = 'git@github.com:Heisey/react_template_custom.git'
 
 try {
   fs.mkdirSync(projectPath)
@@ -34,5 +31,7 @@ try {
 }
 
 projectInstall({
-  repo
+  repo,
+  projectName,
+  projectPath
 })
