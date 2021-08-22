@@ -16,7 +16,7 @@ if (process.argv.length < 3) {
 const projectName = process.argv[2]
 const currentPath = process.cwd()
 const projectPath = path.join(currentPath, projectName)
-const repo = 'git@github.com:Heisey/react_template_custom.git'
+const repo = 'git@github.com:Heisey/react_template.git'
 
 try {
   fs.mkdirSync(projectPath)
